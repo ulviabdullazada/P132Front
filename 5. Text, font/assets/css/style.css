@@ -1,0 +1,33 @@
+@font-face {
+    font-family: RobotoSemi;
+    src: url(../fonts/RobotoSlab-Thin.ttf);
+}
+@font-face {
+    font-family: Radio;
+    src: url(../fonts/AlwaysRadio.ttf);
+}
+p{
+    text-align: justify;
+    width: 50%;
+    /* text-decoration-style: double;
+    text-decoration-color: blue;
+    text-decoration-line:underline ; */
+    /* text-decoration: solid underline red; */
+    text-transform: capitalize;
+    text-indent: 50px;
+    /* letter-spacing: 5px;
+    line-height: 50px; */
+    line-break: auto;
+    direction: ltr;
+    transition: .25s;
+    font-family: Radio;
+}
+p::first-letter{
+    font-size: 60px;
+}
+p:hover{
+    text-shadow: 2px 1px 5px gray;
+}
+div{
+    background-color: yellow;
+}
