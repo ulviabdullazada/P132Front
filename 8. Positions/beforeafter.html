@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 50%;
+            height: 400px;
+            margin: auto;
+            background-color: red;
+        }
+        div::before{
+            content: 'before';
+            display: block;
+        }
+        div::after{
+            content: 'after';
+            display: block;
+        }
+        .q::before{
+            content: '`';
+            display: inline;
+        }
+        .q::after{
+            content: '`';
+            display: inline;
+            color: red;
+        } */
+        button{
+            padding: 10px 20px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            position: relative;
+        }
+        .btn-slide{
+            background-color: #064635;
+            color: #fff;
+            overflow: hidden;
+        }
+        .btn-slide::before{
+            content: '';
+            position: absolute;
+            width: 40%;
+            height: 20%;
+            background-color: #fff;
+            top:15px;
+            left: -30%;
+            transition: .5s;
+            transform: rotate(-75deg);
+        }
+        .btn-slide:hover::before{
+            left: 90%;
+        }
+        .important-text{
+            margin-top: 50px;
+            position: relative;
+            border: 5px double black;
+            width: 50%;
+            padding: 20px;
+        }
+        .important-text::before{
+            content: attr(text-title);
+            position: absolute;
+            background-color: #fff;
+            top: -11px;
+            padding: 0 5px;
+        }
+        .btn-gradient{
+            background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 10px;
+        }
+        .btn-gradient::before{
+            content: '';
+            position: absolute;
+            width: 96%;
+            height: 90%;
+            left: 2%;
+            top: 5%;
+            background-color: black;
+            z-index: 0;
+            border-radius: 10px;
+            transition: .5s;
+        }
+        .btn-gradient:hover::before{
+            background-color: transparent;
+        }
+        .btn-gradient-2{
+            background: black;
+            color: #fff;
+            border-radius: 10px;
+        }
+        .btn-gradient-2::before{
+            position: absolute;
+            content: '';
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            z-index: -1;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+        }
+        .btn-gradient-2:hover::before{
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- <q>Some text with q</q>
+    <p class="q">Some text with p</p> -->
+    <button class="btn-slide">CLICK ME</button>
+    <!-- <div class="important-text" text-title="P132">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae iste dignissimos dolor rerum repellendus ab expedita similique, nesciunt, praesentium repellat libero recusandae molestiae, ipsa quisquam soluta. Minima earum reiciendis nemo.
+    </div>
+    <div class="important-text" text-title="iuweryiweryuiy">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae iste dignissimos dolor rerum repellendus ab expedita similique, nesciunt, praesentium repellat libero recusandae molestiae, ipsa quisquam soluta. Minima earum reiciendis nemo.
+    </div> -->
+    <br>
+    <br>
+    <br>
+    <button class="btn-gradient">
+        <span style="position: relative;z-index:2">Button gradient</span>
+    </button>
+    <br>
+    <br>
+    <br>
+    <button class="btn-gradient-2">
+        <span style="position: relative;z-index:2">Gradient 2</span>
+        
+    </button>
+    
+</body>
+</html>

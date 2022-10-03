@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 4rem;
+}
+.all{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    text-align: center;
+    width: 20%;
+    margin: 2%;
+    position: relative;
+    border: 1px solid black;
+}
+
+.hoverdiv{
+    position: absolute;
+    height: 0;
+    opacity: 0;
+    transition: 1s;
+    width: calc(100% + 2px);
+    background-color: brown;
+    top: -1px;
+    left: -1px;
+}
+.item img{
+    width: 100%;
+}
+.item:hover .hoverdiv{
+    opacity: 1;
+    height: calc(100% + 2px);
+    transition: height 1s, opacity 0.25s;
+}
+.sm{
+    position:relative;
+    z-index: 5;
+}
+.item:hover .sm{
+    color: #fff;
+}
+.tripleline{
+    position: relative;
+    border:none;
+    width: 220px;
+    height: 2px;
+    background-color: red;
+}
+.tripleline::before, .tripleline::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: red;
+}
+.tripleline::before{
+    width: 170px;
+    top: 20px;
+}
+.tripleline::after{
+    width: 120px;
+    top: 40px;
+}
