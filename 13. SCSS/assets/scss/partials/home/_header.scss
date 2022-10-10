@@ -1,0 +1,14 @@
+
+#home{
+    .left-btn,.right-btn{
+        @extend %btn;
+        padding: .8rem;
+    }
+    .left-btn{
+        @include button($bgcolor:orange,$color:#fff,$hovercolor:darkorange);
+    }
+    .right-btn{
+        @include button($bgcolor:rgb(233, 213, 176),$color:orange,$hovercolor:rgba(233, 213, 176,.8));
+        margin-left: 15px;
+    }
+}

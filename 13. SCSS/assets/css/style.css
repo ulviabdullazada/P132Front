@@ -1,0 +1,48 @@
+.navbar .buy-now, #home .left-btn, #home .right-btn {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#home .left-btn, #home .right-btn {
+  padding: 0.8rem;
+}
+#home .left-btn {
+  background-color: orange;
+  color: #fff;
+}
+#home .left-btn:hover {
+  background-color: darkorange;
+}
+#home .right-btn {
+  background-color: rgb(233, 213, 176);
+  color: orange;
+  margin-left: 15px;
+}
+#home .right-btn:hover {
+  background-color: rgba(233, 213, 176, 0.8);
+}
+
+.navbar .navbar-brand {
+  color: orange !important;
+  font-weight: 700;
+  font-size: 25px;
+}
+.navbar .nav-link {
+  color: gray !important;
+  transition: 0.5s;
+  font-weight: 500;
+}
+.navbar .nav-link:nth-child(1), .navbar .nav-link:hover {
+  color: rgb(87, 85, 85) !important;
+}
+.navbar .buy-now {
+  background-color: orange;
+  color: #fff;
+  margin-left: 50px;
+}
+.navbar .buy-now:hover {
+  background-color: darkorange;
+}/*# sourceMappingURL=style.css.map */

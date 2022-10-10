@@ -1,0 +1,21 @@
+
+.navbar{
+    .navbar-brand{
+        color: orange !important;
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .nav-link{
+        color: gray !important;
+        transition: .5s;
+        font-weight: 500;
+        &:nth-child(1), &:hover{
+            color: rgb(87, 85, 85) !important;
+        }
+    }
+    .buy-now{
+        @extend %btn;
+        @include button($bgcolor:orange,$color:#fff,$hovercolor:darkorange);
+        margin-left: 50px;
+    }
+}
